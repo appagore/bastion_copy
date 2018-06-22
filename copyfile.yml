@@ -1,0 +1,8 @@
+---
+- hosts: tower1.d3a9.internal
+
+  tasks:
+    - name: fetch file from remote host
+      fetch: src=/tmp/master
+             dest=/tmp/master
+             flat=yes
